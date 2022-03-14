@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Store Collection</title>
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="store-style.css" />
+        <script src="store.js" async></script>
+    </head>
+
+    <body>
+<!------------------------------------------------------ HEADER-NAVIGATION BAR ---------------------------------------------------------->
+        <header class="main-header" style="background-color: rgb(235, 131, 34);">
+            <nav class="main-nav nav" style="font-weight: bolder; font-size: 20px;">
+                <ul>
+                    <a class="navbar-brand" style="color: white; font-weight: bolder; font-size: 40px; font-family: cursive;" href="#">Kitchen Story</a>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="store.html">STORE</a></li>
+                    <li><a href="#cart">CART &nbsp;<span class="glyphicon glyphicon-shopping-cart" style="color: white;"></span></a></li>
+                    <li><a href="signin.html">SIGN-IN</a></li>
+                </ul>
+            </nav><br>
+            <h1 class="band-name" style="font-size: 50px;">IN-STORE COLLECTION</h1>
+        </header>
+
+<!------------------------------------------------------ SEARCH BAR ---------------------------------------------------------->
+        <br><br>
+        <i class="fas fa-search"></i>
+    <input type="text" class="searchBar" id="myInput" placeholder=" Search by Product Name" onkeyup="searchFun()"
+    style="border: 3px solid saddlebrown; border-radius: 12px; font-weight: bolder; width: 60%; height:8vh; align-items: center; margin-left: 250px;">
+    <br><br>
+
+<!------------------------------------------------------ STORE ITEMS ---------------------------------------------------------->
+
+        <section class="container content-section">
+            <br>
+            <div class="shop-items" id="shop-items">
+                <div class="shop-item" id="shop-item"><br><br>
+                    <span class="shop-item-title">Kidney beans</span>
+                    <img class="shop-item-image" src="D:\Phase4\phase4project\images\product4.jfif">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.150/kg</span>
+                        <button 
+                        class="btn btn-primary shop-item-button" type="button" style="background-color: seagreen;">
+                        ADD TO CART&nbsp;&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="color: white;"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="shop-item" id="shop-item"><br><br>
+                    <span class="shop-item-title">Dortitos</span>
+                    <img class="shop-item-image" src="D:\Phase4\phase4project\images\product11.jfif">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.149</span>
+                        <button 
+                        class="btn btn-primary shop-item-button" type="button" style="background-color: seagreen;">
+                        ADD TO CART&nbsp;&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="color: white;"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="shop-item"><br><br> 
+                    <span class="shop-item-title">Apples</span>
+                    <img class="shop-item-image" src="D:\Phase4\phase4project\images\product1.jfif">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.50</span>
+                        <button 
+                        class="btn btn-primary shop-item-button" type="button" style="background-color: seagreen;">
+                        ADD TO CART&nbsp;&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="color: white;"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="shop-item"><br><br>
+                    <span class="shop-item-title">Peanut butter</span>
+                    <img class="shop-item-image" src="D:\Phase4\phase4project\images\product8.jfif">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.320</span>
+                        <button 
+                        class="btn btn-primary shop-item-button" type="button" style="background-color: seagreen;">
+                        ADD TO CART&nbsp;&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="color: white;"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="shop-item"><br><br>
+                    <span class="shop-item-title">Toor Daal</span>
+                    <img class="shop-item-image" src="D:\Phase4\phase4project\images\product10.jfif">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">RS.200</span>
+                        <button 
+                        class="btn btn-primary shop-item-button" type="button" style="background-color: seagreen;">
+                        ADD TO CART&nbsp;&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="color: white;"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="shop-item"><br><br>
+                    <span class="shop-item-title">Tomatoes</span>
+                    <img class="shop-item-image" src="D:\Phase4\phase4project\images\product12.jfif">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.60</span>
+                        <button 
+                        class="btn btn-primary shop-item-button" type="button" style="background-color: seagreen;">
+                        ADD TO CART&nbsp;&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="color: white;"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="shop-item"><br><br>
+                    <span class="shop-item-title">oats</span>
+                    <img class="shop-item-image" src="D:\Phase4\phase4project\images\product2.jfif">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.320</span>
+                        <button 
+                        class="btn btn-primary shop-item-button" type="button" style="background-color: seagreen;">
+                        ADD TO CART&nbsp;&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="color: white;"></span>
+                        </button>
+                    </div>
+                </div>
+
+                
+                <div class="shop-item"><br><br>
+                    <span class="shop-item-title">Tumeric</span>
+                    <img class="shop-item-image" src="D:\Phase4\phase4project\images\product7.jfif">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.240</span>
+                        <button 
+                        class="btn btn-primary shop-item-button" type="button" style="background-color: seagreen;">
+                        ADD TO CART&nbsp;&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="color: white;"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="shop-item"><br><br>
+                    <span class="shop-item-title">spice organiser</span>
+                    <img class="shop-item-image" src="D:\Phase4\phase4project\images\trend4.jfif">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.500</span>
+                        <button 
+                        class="btn btn-primary shop-item-button" type="button" style="background-color: rgb(235, 131, 34);">
+                        ADD TO CART&nbsp;&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="color: white;"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section><br><br>
+
+<!------------------------------------------------------ CART SECTION ---------------------------------------------------------->
+        <section class="container content-section" id="cart">
+            <h1 style="text-align: center; font-weight: bolder; font-size: 35px; color: rgb(107, 47, 7);">CART</h1>
+            <hr style="border: 2px solid rgb(107, 47, 7);">
+            <!-- <h2 class="section-header">CART</h2> -->
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">Rs.0/-</span>
+            </div>
+            <form action="payment.html">
+                 <button class="btn btn-primary btn-purchase" type="submit" style="background-color: rgb(235, 131, 34);">PURCHASE</button>
+            </form>
+        </section>
+       
+
+    </body>
+</html>
